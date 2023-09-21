@@ -1,67 +1,27 @@
-﻿using System.Globalization;
-using CsvHelper;
-using CsvHelper.Configuration;
-
-public class Transaction
-{
-    public string Date { get; set; }
-    public string From { get; set; }
-    public string To { get; set; }
-    public string Narrative { get; set; }
-    public decimal Amount { get; set; }
-}
-
-public class Person
-{
-    public Person(string nme, decimal blnce) {
-        this.Name = nme;
-        this.Balance = blnce;
-    }
-    public string Name { get; set; }
-    public decimal Balance { get; set; }
-}
-
-// TODO: Make static
-public class TransactionReader
-
-{
-    public List<Transaction> readTransactions()
-    {
-        // TODO: Take path and CultureInfo as argument
-        using (var reader = new StreamReader("C:\\Users\\marrob\\Documents\\Training\\SupportBank\\SupportBank\\Transactions2014.csv"))
-        {
-            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                HasHeaderRecord = true,
-                MissingFieldFound = null,
-                HeaderValidated = null,
-            }))
-            {
-                return csv.GetRecords<Transaction>().ToList();
-            }
-        }
-    }
-}
+﻿using SupportBank;
 
 class App
 {
     static void Main()
     {
         TransactionReader transactionReader = new TransactionReader();
-        IEnumerable<Transaction> transactions = transactionReader.readTransactions();
-        // foreach (Transaction transaction in transactions ) {
-        //     Console.WriteLine(transaction.From);
-        // }
+        List<Transaction> transactions = transactionReader.ReadTransactions();
         List<Person> people = GetAllPeople(transactions);
-        foreach (Person person in people) {
-            Console.WriteLine(person.Balance);
+        // foreach (Person person in people) {
+        //     Console.WriteLine(person.Name + " has a balance " + person.Balance);
+        // }
+
+        foreach (Transaction transaction in GetPersonalTransactions("Jon A", transactions) )
+        {
+            Console.WriteLine(transaction.Date + ", from " + transaction.From + " to "  + transaction.To + ", "  + transaction.Narrative + ", "  + transaction.Amount);
         }
     }
 
-    static List<Person> GetAllPeople (IEnumerable<Transaction> transactions)
+    static List<Person> GetAllPeople (List<Transaction> transactions)
     {
         List<Person> people = new List<Person>();
-        foreach (Transaction transaction in transactions ) {
+        foreach (Transaction transaction in transactions )
+        {
             int FromIndex = people.FindIndex((person) => person.Name == transaction.From);
             if ( FromIndex == -1 )
             {
@@ -82,5 +42,14 @@ class App
             }
         }
         return people;
+    }
+
+    static List<Transaction> GetPersonalTransactions (string Name, List<Transaction> transactions ) {
+        List<Transaction> PersonalTransactions = new List<Transaction>();
+        foreach (Transaction transaction in transactions)
+        {
+            if (transaction.From == Name || transaction.To == Name ) PersonalTransactions.Add(transaction);
+        }
+        return PersonalTransactions;
     }
 }
