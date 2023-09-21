@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HrxNeXbPQJZgQuN8LhBEGNwW4jPoJHgm8dIJbPfbDZHNnvlA9Lhi0Zn7GrIe3jgRSZypuNWGzO6iNL1YuK4/jQ==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\marrob\\Documents\\Training\\SupportBank\\SupportBank\\SupportBank.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marrob\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

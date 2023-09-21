@@ -1,0 +1,17 @@
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\SupportBank.exe
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\SupportBank.deps.json
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\SupportBank.runtimeconfig.json
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\SupportBank.dll
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\SupportBank.pdb
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.csproj.AssemblyReference.cache
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.AssemblyInfoInputs.cache
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.AssemblyInfo.cs
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.csproj.CoreCompileInputs.cache
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.dll
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\refint\SupportBank.dll
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.pdb
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.genruntimeconfig.cache
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\ref\SupportBank.dll
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\CsvHelper.dll
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.csproj.CopyComplete
