@@ -4,14 +4,13 @@ using CsvHelper.Configuration;
 
 namespace SupportBank
 {
-    // TODO: Make static
     public class TransactionReader
 
     {
-        public List<Transaction> ReadTransactions()
+        public static List<Transaction> ReadTransactions(string path)
         {
-            // TODO: Take path and CultureInfo as argument
-            using var reader = new StreamReader("C:\\Users\\marrob\\Documents\\Training\\SupportBank\\SupportBank\\Transactions2014.csv");
+            // TODO: CultureInfo as argument
+            using var reader = new StreamReader(path);
             using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = true,

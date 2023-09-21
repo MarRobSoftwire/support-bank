@@ -1,9 +1,13 @@
-public class Person
+namespace SupportBank
 {
-    public Person(string nme, decimal blnce) {
-        this.Name = nme;
-        this.Balance = blnce;
+    public class Person
+    {
+        public Person(string nme, decimal blnce)
+        {
+            Name = nme;
+            Balance = blnce;
+        }
+        public string Name { get; set; }
+        public decimal Balance { get; set; }
     }
-    public string Name { get; set; }
-    public decimal Balance { get; set; }
 }
