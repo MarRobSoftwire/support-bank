@@ -8,7 +8,17 @@ public class Transaction
     public string From { get; set; }
     public string To { get; set; }
     public string Narrative { get; set; }
-    public float Ammount { get; set; }
+    public decimal Amount { get; set; }
+}
+
+public class Person
+{
+    public Person(string nme, decimal blnce) {
+        this.Name = nme;
+        this.Balance = blnce;
+    }
+    public string Name { get; set; }
+    public decimal Balance { get; set; }
 }
 
 // TODO: Make static
@@ -39,8 +49,38 @@ class App
     {
         TransactionReader transactionReader = new TransactionReader();
         IEnumerable<Transaction> transactions = transactionReader.readTransactions();
-        foreach (Transaction transaction in transactions ) {
-            Console.WriteLine(transaction.From);
+        // foreach (Transaction transaction in transactions ) {
+        //     Console.WriteLine(transaction.From);
+        // }
+        List<Person> people = GetAllPeople(transactions);
+        foreach (Person person in people) {
+            Console.WriteLine(person.Balance);
         }
+    }
+
+    static List<Person> GetAllPeople (IEnumerable<Transaction> transactions)
+    {
+        List<Person> people = new List<Person>();
+        foreach (Transaction transaction in transactions ) {
+            int FromIndex = people.FindIndex((person) => person.Name == transaction.From);
+            if ( FromIndex == -1 )
+            {
+                people.Add(new Person(transaction.From, transaction.Amount));
+            }
+            else
+            {
+                people[FromIndex].Balance += transaction.Amount;
+            }
+            int ToIndex = people.FindIndex((person) => person.Name == transaction.To);
+            if ( ToIndex == -1 )
+            {
+                people.Add(new Person(transaction.To, -transaction.Amount));
+            }
+            else
+            {
+                people[ToIndex].Balance += -transaction.Amount;
+            }
+        }
+        return people;
     }
 }
