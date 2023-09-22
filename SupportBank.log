@@ -1,0 +1,43 @@
+2023-09-22 10:01:08.4802 Debug - SupportBank.SBLogger: Opening file C:\Users\marrob\Documents\Training\SupportBank\SupportBank\DodgyTransactions2015.csv
+2023-09-22 10:01:08.7009 Error - SupportBank.SBLogger: CsvHelper.TypeConversion.TypeConverterException: The conversion cannot be performed.
+    Text: 'One Cheeseburger'
+    MemberName: Amount
+    MemberType: System.Decimal
+    TypeConverter: 'CsvHelper.TypeConversion.DecimalConverter'
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: 4
+   HeaderRecord:
+["Date","From","To","Narrative","Amount"]
+IParser state:
+   ByteCount: 0
+   CharCount: 1196
+   Row: 28
+   RawRow: 28
+   Count: 5
+   RawRecord:
+01/03/2015,Ben B,Sam N,Lunch,One Cheeseburger
+
+
+2023-09-22 10:02:08.3367 Debug - SupportBank.SBLogger: Opening file C:\Users\marrob\Documents\Training\SupportBank\SupportBank\DodgyTransactions2015.csv
+2023-09-22 10:02:48.9492 Debug - SupportBank.SBLogger: Opening file C:\Users\marrob\Documents\Training\SupportBank\SupportBank\DodgyTransactions2015.csv
+2023-09-22 10:02:49.1561 Error - SupportBank.SBLogger: CsvHelper.TypeConversion.TypeConverterException: The conversion cannot be performed.
+    Text: 'One Cheeseburger'
+    MemberName: Amount
+    MemberType: System.Decimal
+    TypeConverter: 'CsvHelper.TypeConversion.DecimalConverter'
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: 4
+   HeaderRecord:
+["Date","From","To","Narrative","Amount"]
+IParser state:
+   ByteCount: 0
+   CharCount: 1196
+   Row: 28
+   RawRow: 28
+   Count: 5
+   RawRecord:
+01/03/2015,Ben B,Sam N,Lunch,One Cheeseburger
+
+

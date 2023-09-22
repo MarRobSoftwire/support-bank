@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HrxNeXbPQJZgQuN8LhBEGNwW4jPoJHgm8dIJbPfbDZHNnvlA9Lhi0Zn7GrIe3jgRSZypuNWGzO6iNL1YuK4/jQ==",
+  "dgSpecHash": "jIjIcdux9dnebk3k/KXYfxeTC6eZdwCH2V/Yk2P4Vbepu4NxW7mFoIOYslojFjt/yx1wY59wcqBE5QKoFAJA4w==",
   "success": true,
   "projectFilePath": "c:\\Users\\marrob\\Documents\\Training\\SupportBank\\SupportBank\\SupportBank.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\marrob\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+    "C:\\Users\\marrob\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\marrob\\.nuget\\packages\\nlog\\5.2.4\\nlog.5.2.4.nupkg.sha512"
   ],
   "logs": []
 }

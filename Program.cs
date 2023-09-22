@@ -1,10 +1,12 @@
 ﻿using SupportBank;
-
 class App
 {
     static void Main()
     {
-        List<Transaction> transactions = TransactionReader.ReadTransactions("C:\\Users\\marrob\\Documents\\Training\\SupportBank\\SupportBank\\Transactions2014.csv");
+        var path = "C:\\Users\\marrob\\Documents\\Training\\SupportBank\\SupportBank\\Transactions2014.csv";
+        path = "C:\\Users\\marrob\\Documents\\Training\\SupportBank\\SupportBank\\DodgyTransactions2015.csv";
+        List<Transaction> transactions = TransactionReader.ReadTransactions(path);
+        
         List<Person> people = GetAllPeople(transactions);
         foreach (Person person in people) {
             Console.WriteLine(person.Name + " has a balance " + person.Balance);

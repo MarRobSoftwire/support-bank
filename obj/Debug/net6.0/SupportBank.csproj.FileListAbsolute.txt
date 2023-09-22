@@ -15,3 +15,4 @@ c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\Supp
 c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\ref\SupportBank.dll
 c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\CsvHelper.dll
 c:\Users\marrob\Documents\Training\SupportBank\SupportBank\obj\Debug\net6.0\SupportBank.csproj.CopyComplete
+c:\Users\marrob\Documents\Training\SupportBank\SupportBank\bin\Debug\net6.0\NLog.dll
